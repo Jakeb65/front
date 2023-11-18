@@ -131,3 +131,96 @@ body{
     width: 140%;
     height: 45%;
 }
+
+.chooseLang {
+    position: relative;
+    padding: 0px;
+}
+
+.chooseLang .text {
+    display: block;
+    bottom: 100%;
+}
+
+.chooseLang .text.textPL {
+    top: -120%;
+    float: left;
+    display: none;
+    color: #FCF8EE;
+    height: auto;
+    position: relative;
+
+}
+
+.chooseLang .text.textEN {
+    top: -120%;
+    float: left;
+    display: block;
+    color: #FCF8EE;
+    clear: both;
+    position: relative;
+}
+
+.check {
+    position: relative;
+    bottom: 100%;
+    left: 80%;
+    width: 100px;
+    cursor: pointer;
+    
+}
+
+.check::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 40px;
+    background: #E3D8B1;
+    border-radius: 8px;
+    box-shadow: 2px 3px 5px #743A33;
+}
+
+.check:checked::before {
+    background: #C92130;
+    left: 0px;
+    box-shadow: 2px 3px 5px #743A33;
+}
+
+.check::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    height: 40px;
+    background: #fff;
+    border-radius: 8px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked::after {
+    left: 50px;
+    border: 2px solid #C92130;
+}
+
+.check:checked ~ .text.textPL {
+    display: block;
+}
+
+.check:checked ~ .text.textEN {
+    display: none;
+}
+
+.PL {
+    position: static;
+    color: #FCF8EE;
+    visibility: hidden;
+}
+
+.EN {
+    position: static;
+    color: #FCF8EE;
+    visibility: hidden;
+
+}
