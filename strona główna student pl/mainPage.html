@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="mainPageStyle.css">                          
+    <title>Strona główna</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="logo.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="#">Strona główna</a></li>
+            <li id="link1" class="link"><a href="#">Twoje praktyki</a></li>
+            <li id="link2" class="link"><a href="#">Oferty praktyk</a></li>
+            <li id="link3" class="link"><a href="#">Uzupełnij swoje dane</a></li>
+            <li id="link4" class="link"><a href="#">Wygeneruj wniosek</a></li>
+            <li id="link5" class="link"><a href="#">Twoje wnioski</a></li>
+        </ul>
+        <div class="chooseLang">
+            <span class="PL">PL</span>
+            <span class="EN">EN</span>
+            <input type="checkbox" class="check" checked>
+
+            <div class="text textPL">
+                <h2>PL</h2>
+            </div>
+
+            <div class="text textEN">
+                <h2>EN</h2>
+            </div>
+        </div>
+        <button class="btn">Wyloguj</button>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <H1>System zarządzania praktykami <span>Politechniki Świętokrzyskiej</span> </H1>
+            <p>
+                System zarządzania praktykami stworzony z myślą o studentach szukających praktyki zawodowej oraz dla pracodawców szukających praktykantów
+            </p>
+            <button class="btn">Zaczynajmy</button>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="header">TWOJE PRAKTYKI</h2>
+        <p class="sub-header">
+            Tu pojawią się dane na temat Twoich aktualnych praktyk
+        </p>
+        <div class="twojePraktyki">
+            <main class="table">
+                <section class="table__header">
+                    <h1>Twoje praktyki</h1>
+                    <div class="input-group">
+                        <input type="search" placeholder="Wyszukaj...">
+                    </div>
+                    <div class="export__file">
+                        <label for="export-file" class="export__file-btn" title="Export File"></label>
+                        <input type="checkbox" id="export-file">
+                    </div>
+                </section>
+                <section class="table__body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Lp <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Nazwa firmy <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Adres firmy <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Profil działalności <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Stanowisko <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Czas pracy <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Zakres obowiązków <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Dane koordynatora <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Uwagi <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td> MJM</td>
+                                <td> Sandomierska 19 </td>
+                                <td> Rozwalanie telewizorów </td>
+                                <td> Informatyk</td>
+                                <td> 100 godzin</td>
+                                <td> Niszczenie telewizorów</td>
+                                <td> Kamil Bąk, 123-432-101</td>
+                                <td> Było super</td>
+                                <td>
+                                    <p class="status delivered">Zaliczone</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="header">OFERTY PRAKTYK</h2>
+        <p class="sub-header">
+            Tu pojawią się wszystkie aktualne oferty praktyk
+        </p>
+        <div class="ofertyPraktyk">
+            <main class="table">
+                <section class="table__header">
+                    <h1>Oferty praktyk</h1>
+                    <div class="input-group">
+                        <input type="search" placeholder="Wyszukaj...">
+                    </div>
+                    <div class="export__file">
+                        <label for="export-file" class="export__file-btn" title="Export File"></label>
+                        <input type="checkbox" id="export-file">
+                    </div>
+                </section>
+                <section class="table__body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Lp <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Nazwa firmy <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Adres firmy <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Profil działalności <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Stanowisko <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Czas pracy <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Zakres obowiązków <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Dane koordynatora <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Uwagi <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td> Selenge Media</td>
+                                <td> krakowska 169 </td>
+                                <td> Gołębie</td>
+                                <td> Elektryk</td>
+                                <td> 5 godzin</td>
+                                <td> Karmienie gołębi</td>
+                                <td> Michał Ptaszor, 500 400 300</td>
+                                <td> Prawo jazdy</td>
+                                <td>
+                                    <p class="status delivered">Dostępne</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="header">UZUPEŁNIJ SWOJE DANE</h2>
+        <p class="sub-header">
+            Uzupełnij Swoje dane w celu wyszukania odpowiednich dla Ciebie praktyk
+        </p>
+        <div class="ofertyPraktyk">
+            
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="header">KREATOR WNIOSKÓW</h2>
+        <p class="sub-header">
+            Tutaj wygenerujesz Swój wniosek
+        </p>
+        <div class="twojePraktyki">
+            
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="header">TWOJE WNIOSKI</h2>
+        <p class="sub-header">
+            Tu pojawią się Twoje wnioski
+        </p>
+        <div class="twojePraktyki">
+            <main class="table">
+                <section class="table__header">
+                    <h1>Twoje wnioski</h1>
+                    <div class="input-group">
+                        <input type="search" placeholder="Wyszukaj...">
+                    </div>
+                    <div class="export__file">
+                        <label for="export-file" class="export__file-btn" title="Export File"></label>
+                        <input type="checkbox" id="export-file">
+                    </div>
+                </section>
+                <section class="table__body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Lp <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Nazwa firmy <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Adres firmy <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Profil działalności <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Stanowisko <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Czas pracy <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Zakres obowiązków <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Dane koordynatora <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Uwagi <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td> Maxi Pizza</td>
+                                <td> Zagnańska 94 </td>
+                                <td> Dostawca</td>
+                                <td> Brak</td>
+                                <td> 150 godzin</td>
+                                <td> Dostarczanie pizzy</td>
+                                <td> Anna Lis, 100 200 300</td>
+                                <td> Prawo jazdy</td>
+                                <td>
+                                    <p class="status pending">Rozpatrywane</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 2 </td>
+                                <td> Starbucks</td>
+                                <td> Krakowska 13 </td>
+                                <td> Zmywacz</td>
+                                <td> Brak</td>
+                                <td> 120 godzin</td>
+                                <td> Zmywanie naczyń</td>
+                                <td> Patrycja Wilczur, 213 769 666</td>
+                                <td> Prawo jazdy</td>
+                                <td>
+                                    <p class="status pending">Rozpatrywane</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <footer class="container">
+
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2023 PumpernikielTeam. Wszystkie prawa zastżeżone.
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
